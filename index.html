@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main></main>
+  </body>
+</html>
+
+<form>
+  <fieldset>
+    <legend>Shipping Information</legend>
+  <div>
+    <label for="name">Full name:</label>
+    <input 
+    id="name" 
+    type="text" 
+    name="name"
+    placeholder="Please enter your full name" />
+  </div>
+  <div>
+    <label for="mail">Email:</label>
+    <input 
+    id="mail"
+    type="text"
+    name="email"
+    autofocus="on"
+    maxlength="30"
+    required
+    placeholder="Please enter your Email" />
+  </div>
+  <div>
+    <label for="form-message">Your message:</label>
+    <textarea
+    id="form-message"
+    name="message"
+    autofocus="on"
+    maxlength="200"
+    required
+    placeholder="How may daddy help you today?"></textarea>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input
+    id="password"
+    type="password"
+    name="password"
+    minlength="69"/>
+  </div>
+  </fieldset>
+  <fieldset>
+    <legend>Select preference</legend>
+    <h2>How do you like your eggs?</h2>
+    <div>
+      <input
+      id="poached"
+      name="egg"
+      type="radio"
+      value="Poached" />
+      <label for="poached">Poached</label>
+    </div>
+    <div>
+      <input
+      id="scrambled"
+      name="egg"
+      type="radio"
+      value="scrambled" />
+      <label for="scrambled">Scrambled</label>
+    </div>
+    <div>
+      <input
+      id="over easy"
+      name="egg"
+      type="radio"
+      value="over easy" />
+      <label for="over easy">Over Easy</label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Select your preference(s)</legend>
+    <h2>What position(s) do you prefer?</h2>
+    <div>
+      <input
+      id="1st base"
+      name="position"
+      type="checkbox" />
+      <label for="1st base">1st Base</label>
+    </div>
+    <div>
+      <input
+      id="outfielder"
+      name="position"
+      type="checkbox" />
+      <label for="outfielder">Outfielder</label>
+    </div>
+    <div>
+      <input
+      id="pitcher"
+      name="position"
+      type="checkbox" />
+      <label for="pitcher">Pitcher</label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Favorite font</legend>
+    <div>
+      <label for="fonts">Select a font</label>
+      <select name="fonts" id="fonts" size="1">
+        <option value="arial">Arial</option>
+        <option value="wingdings">Wingdings</option>
+        <option value="comic sans">Comic Sans</option>
+        <option value="webdings">Webdings</option>
+      </select>
+    </div>
+  </fieldset>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <div>
+    <label for="phone">Phone #:</label>
+    <input
+    id="phone"
+    name="phone"
+    type="text"
+    pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+    placeholder="xxx-xxx-xxxx" />
+  </div>
+</form>
